@@ -1,0 +1,11 @@
+.back_container{
+    position: fixed;
+    margin-top: calc( 100% + 150px);
+    margin-left: 80%;
+}
+
+.backBotton-pre{
+    position: absolute;
+    z-index: 1;
+   
+}

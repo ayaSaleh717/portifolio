@@ -1,0 +1,55 @@
+.resume_container{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1.875rem;
+}
+.timeline{
+    background-color: var(--container-color);
+    padding: 1.875rem;
+    border-radius: var(--border-redius);
+    position: relative;
+    box-shadow: var(--shadow);
+}
+.timeline_item{
+    position: relative;
+    padding-left:3.125rem ;
+    padding-bottom: 3.125rem;
+
+}
+.timeline_item:last-child{
+    padding-bottom: 0;
+}
+.timeline_item::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: var(--first-color);
+
+}
+.timeline_text{
+    font-size: 1.5rem;
+}
+
+.timeline .icon-briefcase,
+.timeline .icon-graduation{
+    position: absolute;
+    left: -0.6rem;
+    top: 0;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    background-color: var(--container-color);
+    padding: 0.4375rem;
+
+}
+
+.timeline_date{
+    color: #8b88b1;
+    font-size: var(--smal-font-size);
+}
+.timeline_title{
+    font-size: var(--h3-font-size);
+    margin: 0.5rem 0;
+}
+

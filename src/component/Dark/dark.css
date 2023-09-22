@@ -1,0 +1,48 @@
+.dark-mode{
+    /* flex: 1;
+    text-align: l; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    
+  
+}
+
+
+
+/* .dark {
+    --background-color: black;
+    --text-color: var(--text-color-dark);
+  }
+  
+  .light {
+    --background-color: var(--body-color);
+    --text-color: var(--text-color-light);
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+   */
+
+   body {
+    background-color: var(--body-color);
+    color: #000000;
+
+}
+
+
+
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: #222222;
+    color: #ffffff;
+    --container-color: #514e4e;
+    --body-color:#514e4e;
+    --title-color: #a59999;
+    --text-color: hsl(243, 29%, 76%);
+    --shadow: 0px 5px 20px rgba(109, 109, 118, 0.272);
+
+}
