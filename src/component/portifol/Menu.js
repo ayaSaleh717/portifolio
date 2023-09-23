@@ -8,44 +8,49 @@ import Work6 from '../../assets/work-6.svg'
 
 
 const Menu = [
-    {
-      id: 1,
-      image: Work1,
-      title: "Project Management Illustration",
-      category: "Design",
-    },
+    // {
+    //   id: 1,
+    //   image: Work1,
+    //   title: "Project Management Illustration",
+    //   category: "Design",
+    // },
+    
     {
       id: 2,
       image: Work2,
-      title: "Guest App Walkthrough Screens",
+      title: "A Music Player",
       category: "Art",
+      link: "http://"
     },
     {
       id: 3,
       image: Work3,
-      title: "Delivery App Wireframe",
-      category: "Branding",
+      title: "A Quiz App",
+      category: "Design",
+      link:'https://ayasaleh717.github.io/Quize_App/'
     },
     ,
     {
       id: 4,
       image: Work4,
-      title: "Onboarding Motivation",
+      title: "A Weather App",
       category: "Design",
+      link:'https://mz1hbbznyvdftxqcjima3q.on.drv.tw/weather/'
     },
     ,
-    {
-      id: 5,
-      image: Work5,
-      title: "iMac Mockup Design",
-      category: "Creative",
-    },
-    ,
+    // {
+    //   id: 5,
+    //   image: Work5,
+    //   title: "iMac Mockup Design",
+    //   category: "Creative",
+    // },
+    // ,
     {
       id: 6,
       image: Work6,
-      title: "Game Store App Concept",
+      title: "Game One",
       category: "Art",
+      link: "http://"
     },
   ];
   

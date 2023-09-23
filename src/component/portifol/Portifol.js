@@ -15,7 +15,7 @@ const Portifol = () => {
   }
 
   return (
-    <section className='work container section' id='work'>
+    <section className='work container section' id='portifolio'>
       <h2 className='section_title'>Recent Works</h2>
       <div className='work_filter'>
           <span className='work_item' onClick={() => setItems(Menu)}>Everything</span>
@@ -25,7 +25,7 @@ const Portifol = () => {
         </div>
       <div className='work_container grid'>
         {items.map((elem) =>{
-          const{ id,image , title,category}= elem;
+          const{ id,image , title,category,link}= elem;
           return(
           <div className='work_card' key={id}>
             <div className='work_thumbnail'>
@@ -34,7 +34,7 @@ const Portifol = () => {
             </div>
             <span className='work_category'>{category}</span>
             <h3 className='work_title'>{title}</h3>
-            <a href='#' className='work_button'>
+            <a href={link} className='work_button'>
               <i className='icon-link work_button-icon'></i>
             </a>
 

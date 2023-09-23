@@ -20,7 +20,7 @@ const Home = () => {
 
     </div>
     <HeaderSocials />
-    <button className='btn' href='#contact ' >Hire Me</button>
+    <button className='btn' href='#contact' >Hire Me</button>
     {/* <ScroleDown /> */}
 
    <Shapes />

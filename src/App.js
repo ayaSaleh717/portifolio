@@ -15,7 +15,7 @@ import BackBotton from './component/BackBotton/BackBotton';
 function App() {
   return (
   <>
-  <BackBotton />
+   <BackBotton />
     <Slider />
     <main className='main'>
     

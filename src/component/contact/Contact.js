@@ -61,7 +61,15 @@ const Contact = () => {
             </div>
 
           
-          <button className='btn'>Send Message</button>
+          <button className='btn send'>Send Message</button> 
+          or 
+          <a className='btn phone' href='tel:+963993661469'>
+          <i className='icon-phone' /> 
+          <span className='number'>
+             +963 993 661 469
+          </span>
+
+          </a>
          </form>
       </div>
    </section>

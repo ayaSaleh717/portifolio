@@ -1,0 +1,16 @@
+.home-socials{
+    display:flex;
+    column-gap: 3rem;
+    margin: 1.5rem 0;
+    
+}
+
+.home-socials-link{
+    color: var(--title-color);
+    cursor: pointer;
+
+}
+
+.home-socials-link:hover{
+    color: hsl(43, 100%, 68%);
+}

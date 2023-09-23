@@ -17,7 +17,7 @@ const About = () => {
         . I have rich experience in web site design and
           building and customization.
            </p>
-            <a href='' className='btn'>Download CV</a>
+            <a href='https://drive.google.com/file/d/1uU7SnyJW51lOWBFn0i1AdIePY8nUPqtz/view?usp=sharing' className='btn' download >Download CV</a>
         </div>
     
           </div>
@@ -85,7 +85,7 @@ const About = () => {
           </div>
           <div className='skills_data'>
                <div className='skills_title'>
-                   <h3 className='skills_name'>API  </h3>
+                   <h3 className='skills_name'>API </h3>
                    <span className='skills_number'>60%</span>
                 </div>
                 <div className='skills_bar'>
@@ -106,7 +106,7 @@ const About = () => {
           <div className='skills_data'>
                <div className='skills_title'>
                    <h3 className='skills_name'> REACT JS </h3>
-                   <span className='skills_number'>90%</span>
+                   <span className='skills_number'>80%</span>
                 </div>
                 <div className='skills_bar'>
                   <span className='scills_percentage react'></span>

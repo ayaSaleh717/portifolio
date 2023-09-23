@@ -61,6 +61,7 @@
     .menu{
         display: flex;
         justify-content: space-between;
+        position: relative;
         
     }
     .menu i{
@@ -69,6 +70,9 @@
         align-items: center;
         justify-content: center;
         margin-left: 50px;
+        height: auto;
+        width: 20px;
+      
 
     }
 }
@@ -76,7 +80,7 @@
 
 .nav_menu_dis{
     background-color: var( --container-color);
-    backdrop-filter: blur(1.5rem) ;
+    /* backdrop-filter: blur(1.5rem) ; */
     width: 100%;
     border-radius: 1.875rem;
     height: 100%;
@@ -85,6 +89,9 @@
     justify-content: center;
     display: none;
     box-shadow: var(--shadow);
+    position: absolute;
+    z-index: 1;
+    height: auto;
 }
 
 .nav_menu_dis .nav_list{
@@ -100,3 +107,11 @@
     position: fixed;
 } */
 
+
+.nav_logo svg{
+    color: var(--first-color);
+    border: var(--first-color) solid ;
+    border-radius: 50% 50%;
+    width: 60px;
+    height: 60px;
+}
