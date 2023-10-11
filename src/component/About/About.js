@@ -17,7 +17,8 @@ const About = () => {
         . I have rich experience in web site design and
           building and customization.
            </p>
-            <a href='https://drive.google.com/file/d/1uU7SnyJW51lOWBFn0i1AdIePY8nUPqtz/view?usp=sharing' className='btn' download >Download CV</a>
+            <a href='https://drive.google.com/file/d/1XmTGqK87GDo3jSNLlzjv2vP6dHSldAAK/view?usp=sharing'
+          className='btn' download >Download CV</a>
         </div>
     
           </div>
