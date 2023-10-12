@@ -5,6 +5,7 @@ import HeaderSocials from './HeaderSocials'
 import ScroleDown from './ScroleDown'
 import Shapes from './Shapes'
 import DarkMode from '../Dark/DarkMode'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -20,7 +21,7 @@ const Home = () => {
 
     </div>
     <HeaderSocials />
-    <button className='btn' href='#contact' >Hire Me</button>
+    <NavLink className='btn' to='/contact' >Hire Me</NavLink>
     {/* <ScroleDown /> */}
 
    <Shapes />

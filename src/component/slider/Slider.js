@@ -10,7 +10,13 @@ const Slider = () => {
 function shawMenu(){
   setdDisplayNav(!displayNav)  
 }
-  
+function unShawMenu(){
+  setdDisplayNav(false)  
+}
+
+
+
+
   return (
     
     <section className='aside-container'>
@@ -24,24 +30,24 @@ function shawMenu(){
    <div className='menu_display'>
    <nav className='nav menu_display '>
     <div className='nav_menu_dis' style={{ 'display' : ` ${displayNav ? "block" : "none"}`}}>
-      <ul className='nav_list'>
+      <ul className='nav_list' >
 
          <li className='nav_itemMenue'>
-              <NavLink to='/'>
-              <i className='icon-home navLink nav_link'> HOME</i>
+              <NavLink to='/' onClick={unShawMenu}>
+              <i className='icon-home navLink nav_link' > HOME</i>
                </NavLink>
                 </li>
           
 
           <li className='nav_itemMenue'>
-          <NavLink to='/about'>
+          <NavLink to='/about' onClick={unShawMenu}>
           <i className='icon-user-female navLink nav_link'> ABOUT</i>          
                </NavLink>
               
           </li>
 
            <li className='nav_itemMenue'>
-           <NavLink to='/serveces'>
+           <NavLink to='/serveces' onClick={unShawMenu}>
           <i className='icon-briefcase navLink nav_link'> SERVECES</i>          
                </NavLink>
           
@@ -49,7 +55,7 @@ function shawMenu(){
 
         
            <li className='nav_itemMenue'>
-           <NavLink to='/portfolio'>
+           <NavLink to='/portfolio' onClick={unShawMenu}>
           <i className='icon-layers navLink nav_link'> PORTIFOLIO</i>          
                </NavLink>
           
@@ -57,7 +63,7 @@ function shawMenu(){
               
               
 
-           <li className='nav_itemMenue'>
+           <li className='nav_itemMenue' onClick={unShawMenu}>
            <NavLink to='/contact'>
           <i className='icon-bubble navLink nav_link'> CONTACT</i>          
                </NavLink>

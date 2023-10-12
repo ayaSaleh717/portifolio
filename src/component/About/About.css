@@ -32,9 +32,9 @@
     content: '';
     width: 0;
     height: 0;
-    /* border-top: 10px solid transparent;
+    border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 15px solid var(--container-color); */
+    border-right: 15px solid var(--container-color);
     position: absolute;
     left: -0.93rem;
     top:20%
@@ -46,6 +46,10 @@
     border-right: 15px solid var(--container-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .about-descriptions{
     margin-bottom:1rem ;
