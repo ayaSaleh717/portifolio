@@ -79,6 +79,7 @@
 
 
 .nav_menu_dis{
+    margin-top: 20px;
     background-color: var( --container-color);
     /* backdrop-filter: blur(1.5rem) ; */
     width: 100%;

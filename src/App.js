@@ -8,25 +8,53 @@ import Services from './component/services/Services';
 import Contact from './component/contact/Contact'
 import DarkMode from './component/Dark/DarkMode';
 import BackBotton from './component/BackBotton/BackBotton';
+// import RouterLayOut from './component/RouterLayOut';
 
+import {createBrowserRouter ,Route,createRoutesFromElements, RouterProvider} from 'react-router-dom'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Slider/>}>
+        <Route path='/' element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='serveces' element={<Services />} />
+        <Route path='portfolio' element={<Portifolio />} />
+        <Route path='contact' element={<Contact />} />
+      
+        </Route>
+
+  )
+
+)
 
 
 
 function App() {
+
+  
   return (
   <>
-   <BackBotton />
-    <Slider />
+  <RouterProvider router={router} >
+  {/* <BackBotton />
+    <Slider /> */}
+     
+     </RouterProvider>
+     
+   
+
+
+{/* 
+  
     <main className='main'>
     
       <Home/>
       <About />
       <Services />
       {/* <Resume /> */}
-      <Portifolio />
+      {/* <Portifolio /> */}
       {/* <Blog /> */}
-      <Contact />
-    </main>
+      {/* <Contact /> */}
+    {/* </main> */} 
   </>
   
   );

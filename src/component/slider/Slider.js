@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import './slider.css'
-import Logo from './../../assets/logo.png'
+// import Logo from './../../assets/logo.png'
 import DarkMode from '../Dark/DarkMode'
+import { NavLink,Outlet } from 'react-router-dom'
+
 
 const Slider = () => {
   const [displayNav, setdDisplayNav] = useState(false)
@@ -25,41 +27,41 @@ function shawMenu(){
       <ul className='nav_list'>
 
          <li className='nav_itemMenue'>
-            <a href="#home" className='nav_link'>
-              <i className='icon-home'>HOME</i> 
-            </a>
-          </li>
+              <NavLink to='/'>
+              <i className='icon-home navLink nav_link'> HOME</i>
+               </NavLink>
+                </li>
+          
 
           <li className='nav_itemMenue'>
-              <a href="#about" className='nav_link'>
-                <i className='icon-user-female'>ABOUT</i>
-              </a>
+          <NavLink to='/about'>
+          <i className='icon-user-female navLink nav_link'> ABOUT</i>          
+               </NavLink>
+              
           </li>
 
            <li className='nav_itemMenue'>
-          <a href="#services" className='nav_link'>
-               <i className='icon-briefcase'>SERVICES</i>
-          </a>
+           <NavLink to='/serveces'>
+          <i className='icon-briefcase navLink nav_link'> SERVECES</i>          
+               </NavLink>
+          
            </li>
 
-           {/* <li className='nav_itemMenue'>
-          <a href="#resume" className='nav_link'>
-               <i className='icon-graduation'>RESUME</i>
-          </a>
-           </li> */}
         
            <li className='nav_itemMenue'>
-          <a href="#portifolio" className='nav_link'>
-               <i className='icon-layers'>PORTIFOLIO</i>
-               </a>
+           <NavLink to='/portfolio'>
+          <i className='icon-layers navLink nav_link'> PORTIFOLIO</i>          
+               </NavLink>
+          
              </li>
               
               
 
            <li className='nav_itemMenue'>
-                <a href="#contact" className='nav_link'>
-                 <i className='icon-bubble'>COTACT</i>
-              </a>
+           <NavLink to='/contact'>
+          <i className='icon-bubble navLink nav_link'> CONTACT</i>          
+               </NavLink>
+                
            </li>
           
         
@@ -67,6 +69,12 @@ function shawMenu(){
     </div>
     </nav>
    </div>
+
+
+
+
+
+
    <aside className='aside'>
   
     <a href='#home' className='nav_logo'>
@@ -75,59 +83,53 @@ function shawMenu(){
     </a>
 
     <nav className='nav navbar '>
-    <div className='nav_menu'>
-      <ul className='nav_list'>
+          <div className='nav_menu'>
+            <ul className='nav_list'>
 
-         <li className='nav_item'>
-            <a href="#home" className='nav_link'>
-              <i className='icon-home'></i> 
-            </a>
-          </li>
+              <li className='nav_item'>
+              <NavLink to='/'>
+              <i className='icon-home navLink'></i>
+               </NavLink>
+                </li>
 
-          <li className='nav_item'>
-              <a href="#about" className='nav_link'>
-                <i className='icon-user-female'></i>
-              </a>
-          </li>
+                <li className='nav_item'>
+                <NavLink to='/about'>
+                <i className='icon-user-female navLink'></i></NavLink>
+                     
+                </li>
 
-           <li className='nav_item'>
-          <a href="#services" className='nav_link'>
-               <i className='icon-briefcase'></i>
-          </a>
-           </li>
-
-           {/* <li className='nav_item'>
-          <a href="#resume" className='nav_link'>
-               <i className='icon-graduation'></i>
-          </a>
-           </li> */}
-        
-           <li className='nav_item'>
-          <a href="#portifolio" className='nav_link'>
-               <i className='icon-layers'></i>
-               </a>
-             </li>
+                <li className='nav_item'>
+                <NavLink to='/serveces'>
+                <i className='icon-briefcase navLink'></i></NavLink>
+                   
+                </li>
               
-               {/* <li className='nav_item'>
-                <a href="#blog" className='nav_link'>
-                 <i className='icon-note'></i>
-              </a>
-           </li> */}
-
-           <li className='nav_item'>
-                <a href="#contact" className='nav_link'>
-                 <i className='icon-bubble'></i>
-              </a>
-           </li>
+                <li className='nav_item'>
+                <NavLink to='/portfolio' >
+                <i className='icon-layers navLink'></i>
+                </NavLink>
+                  </li>
+                    
           
-        
-      </ul>
-    </div>
+
+                <li className='nav_item'>
+                <NavLink to='/contact'>
+                <i className='icon-bubble navLink'></i>
+                </NavLink>
+                     
+                </li>
+                
+              
+            </ul>
+          </div>
     </nav>
     <div className='nav_footer'>
       <span className='copyright'>&copy; 2023 - 2024.</span>
     </div>
    </aside>
+   <main>
+        <Outlet />
+      </main>
    </section>
   )
 }

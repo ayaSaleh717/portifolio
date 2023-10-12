@@ -34,12 +34,13 @@
     
 }
 
+.navLink,
 .home-socials-link{
     color: var(--title-color);
     cursor: pointer;
 
 }
-
+.navLink:hover,
 .home-socials-link:hover{
     color: hsl(43, 100%, 68%);
 }
