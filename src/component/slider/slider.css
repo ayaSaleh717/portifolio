@@ -12,7 +12,10 @@
     justify-content: space-between;
     z-index: 10;
 }
-
+.menu_container{
+    margin-top: -20px;
+    
+}
 .nav_list{
     display: flex;
     flex-direction: column;

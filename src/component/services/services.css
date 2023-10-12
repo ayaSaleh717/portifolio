@@ -56,9 +56,7 @@
 }
 
 @media screen and (max-width:1000px) {
-    .services_img{
-        width: 10%;
-    }
+  
     .services_container{
         grid-template-columns: repeat(2,1fr);
     }
